@@ -110,6 +110,8 @@ Pay special attention to this URL `https://better-lovecraft.bespoken.link` **NOT
 
 Now, go into the developer portal and click on endpoints. Click the HTTPS radio button and enter your unqiue URL in the `Default Region` area. Mine was `https://better-lovecraft.bespoken.link`. Then, in the dropdown box right below that select `My development endpoint is a subdomain of a domain that has a wildcard certificate from a certificate authority`. Click `Save Endpoints` and you're ready to get testing using the bespoken proxy!
 
+You'll see the request/response JSON along with any `console.log()` statements in the debug console.
+
 ## Useful Commands For The ASK CLI
 
 **Get the latest language model**
