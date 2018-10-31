@@ -1,0 +1,112 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "hackathon starter",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "ProjectCategoryIntent",
+          "slots": [
+            {
+              "name": "category",
+              "type": "ProjectCategories"
+            }
+          ],
+          "samples": [
+            "{category}",
+            "the category of our skill is {category}",
+            "our skill category is {category}",
+            "the category is {category}",
+            "we are developing a skill for {category}",
+            "we are making a skill for {category}",
+            "i am making a {category} skill",
+            "the skill is a {category} skill",
+            "the skill is for {category}",
+            "we are making a {category} skill",
+            "our project is a {category} skill"
+          ]
+        },
+        {
+          "name": "RandomRuleIntent",
+          "samples": [
+            "tell me another rule",
+            "give me another rule",
+            "give me another random rule",
+            "i want to know a rule",
+            "rule",
+            "what is a random rule",
+            "what are the rules",
+            "say a rule",
+            "say a random rule",
+            "random rule",
+            "tell me a random rule",
+            "give me a random rule",
+            "tell me a rule",
+            "give me a rule"
+          ]
+        },
+        {
+          "name": "APICallIntent",
+          "samples": [
+            "tell me another joke",
+            "give me another joke",
+            "tell me another dad joke",
+            "give me another dad joke",
+            "i want a dad joke",
+            "tell me a dad joke",
+            "call the dad joke a.p.i",
+            "get a dad joke",
+            "call the a.p.i.",
+            "make a call to an a.p.i."
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "name": {
+                "value": "Disability Resources And Services",
+                "synonyms": [
+                  "disabilities",
+                  "resources and services for disabilities",
+                  "disability services",
+                  "disability",
+                  "disability resources"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Sustainability",
+                "synonyms": [
+                  "sustainable"
+                ]
+              }
+            },
+            {
+              "name": {
+                "value": "Education",
+                "synonyms": [
+                  "educational"
+                ]
+              }
+            }
+          ],
+          "name": "ProjectCategories"
+        }
+      ]
+    }
+  }
+}

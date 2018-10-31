@@ -1,0 +1,50 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "This template is designed to kickstart your hackathon development. It shows how to use custom slots, API calls, SSML, and other commonly used pieces of code.",
+          "examplePhrases": [
+            "Alexa open hackathon starter",
+            "tell me a dad joke",
+            "give me a random rule"
+          ],
+          "keywords": [
+            "hackathon",
+            "starter",
+            "template"
+          ],
+          "name": "AI Scholars Hackathon Template",
+          "description": "This template is designed to kickstart your hackathon development. It shows how to use custom slots, API calls, SSML, and other commonly used pieces of code.",
+          "smallIconUri": "https://s3.amazonaws.com/ai-scholars-hackathon/icon_108.png",
+          "largeIconUri": "https://s3.amazonaws.com/ai-scholars-hackathon/icon_512.png"
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "No special instructions.",
+      "category": "EDUCATION_AND_REFERENCE",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "sourceDir": "lambda/custom"
+        }
+      }
+    },
+    "manifestVersion": "1.0",
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "locales": {
+        "en-US": {
+          "termsOfUseUrl": "",
+          "privacyPolicyUrl": ""
+        }
+      },
+      "isExportCompliant": true,
+      "containsAds": false,
+      "isChildDirected": false,
+      "usesPersonalInfo": false
+    }
+  }
+}

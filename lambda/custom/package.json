@@ -1,0 +1,17 @@
+{
+  "name": "hackathon-basic-starter",
+  "version": "1.0.0",
+  "description": "AI Scholars Hackathon Template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Carter Kwon",
+  "license": "ISC",
+  "dependencies": {
+    "ask-sdk-core": "^2.0.0",
+    "ask-sdk-model": "^1.0.0",
+    "bespoken-tools": "^2.0.32",
+    "request": "^2.88.0"
+  }
+}

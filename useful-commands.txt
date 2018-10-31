@@ -1,0 +1,30 @@
+In the scripts below, replace the following values:
+  {skill-id} - the id of the skill after it is deployed for the first time
+  {ask-cli-profile} - profile name created with: ask init
+  {my-skill-name} - the name of the folder for the skill you are creating
+
+
+#############
+## AWS CLI ##
+#############
+
+The location of the .aws folder:
+Linux, OS X, or Unix -  ~/.aws
+Windows - %UserProfile%\.aws
+
+#############
+## ASK CLI ##
+#############
+
+The location of the .ask folder:
+Linux, OS X, or Unix -  ~/.ask
+Windows - %UserProfile%\.ask
+
+# get latest model
+ask api get-model -p {ask-cli-profile} -s {skill-id} -l en-US > ./models/downloaded-model.json
+
+# get latest skill
+ask api get-skill -p {ask-cli-profile} -s {skill-id} > downloaded-skill.json
+
+# create skill from template
+ask new --skill-name {my-skill-name} --template --url https://s3.amazonaws.com/ai-scholars-hackathon/templates.json
