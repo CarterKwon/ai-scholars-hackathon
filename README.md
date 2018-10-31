@@ -59,7 +59,7 @@ If you don't have the ASK Toolkit, use the command `ask deploy` while at the roo
 
 After you see the message saying the skill was successfully deployed, there are only two more steps before you can try it out!
 
-1. Change the runtime from Node.js 6.10 to Node.js 8.10. This is required because we use features that were introduced after Node 6.10, like async/await.
+1. Change the runtime from Node.js 6.10 to Node.js 8.10. To do this, log in to the AWS Console, navigate to the Lambda section, click on your function, scroll down, and look for a section that looks like the screenshot below. This is required because we use features that were introduced after Node 6.10, like async/await.
 ![alt Text](https://s3.amazonaws.com/ai-scholars-hackathon/lambda-select-runtime.png)
 
 2. Go into the **Test** tab in the [developer console](https://developer.amazon.com/), and make sure that the testing toggle is enabled.
