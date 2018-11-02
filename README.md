@@ -36,7 +36,7 @@ If you don't have the ASK Toolkit, use the command `ask deploy` while at the roo
 
 After you see the message saying the skill was successfully deployed, there are only two more steps before you can try it out!
 
-1. Change the runtime from Node.js 6.10 to Node.js 8.10. To do this, log in to the AWS Console, navigate to the Lambda section, click on your function, scroll down, and look for a section that looks like the screenshot below. This is required because we use features that were introduced after Node 6.10, like async/await.
+1. Change the AWS Lambda runtime from Node.js 6.10 to Node.js 8.10. To do this, log in to the AWS Console, navigate to the Lambda section, click on your function, scroll down, and look for a section that looks like the screenshot below. This is required because we use features that were introduced after Node 6.10, like async/await.
 ![alt Text](https://s3.amazonaws.com/ai-scholars-hackathon/lambda-select-runtime.png)
 
 2. Go into the **Test** tab in the [developer console](https://developer.amazon.com/), and make sure that the testing toggle is enabled.
@@ -59,11 +59,11 @@ The template demonstrates the usage of many common Alexa features/patterns that 
 * Separating handlers into separate files for more organized code
 * Usage of [template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
 
-The code is well commented and points out when each of these different things are used.
+The code is full of comments that point out when each of these different things are used.
 
 ## Modifying The Template
 
-I'd highly recommend making all changes to the language model (i.e. intents, utterances, slots, etc.) in the developer console to minimize the chance of errors. After you build the model, you can go into the integrated terminal in VS Code and type `ask api get-model -p {ask-cli-profile} -s {skill-id} -l en-US > ./models/downloaded-model.json` from the root of the directory to pull the new language model. You'll have to copy the contents of `models/downloaded-model.json` into `/models/en-US.json`.
+I'd highly recommend making all changes to the language model (i.e. intents, utterances, slots, etc.) in the developer console to minimize the chance of errors. After you build the model in the console, you can go into the terminal in VS Code and type `ask api get-model -p {ask-cli-profile} -s {skill-id} -l en-US > ./models/downloaded-model.json` from the root of the directory to pull the new language model. That command will pull your language model and store it in the file `models/downloaded-model.json`. You can then copy the contents of `models/downloaded-model.json` into `/models/en-US.json`.
 
 You can change the code to reflect the changes in the language model.
 
