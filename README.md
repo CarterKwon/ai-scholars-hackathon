@@ -10,43 +10,9 @@ These instructions assume that you have the following:
 
 * [Amazon Developer Account](https://developer.amazon.com/)
 * [AWS Account](https://aws.amazon.com/) (you can use your own AWS account, or an [AWS Educate Starter Account](https://www.awseducate.com/signin/SiteLogin))
-* Install [Node.js](https://nodejs.org/en/) - install v8.10
 * **If you have your own AWS Account:** [Create a user](http://docs.aws.amazon.com/IAM/latest/UserGuide/getting-started_create-admin-group.html) (save the .csv file with your AWS Access Key ID & AWS Secret Access Key)
 * **If you're using an AWS Educate Starter Account:** Click on **Acount Details** to get your `aws_access_key_id`, `aws_secret_access_key`, and `aws_session_token`
-* [Configure](http://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html) AWS on your local machine. You'll want to use `us-east-1` as the default region name, and `json` as the default output format.
-
-```
-aws configure
-```
-------
-**If you're using an AWS Educate Starter Account:** you will need to add the session token to your credentials file. You can open the `.aws/credentials` file and copy/paste the credentials from your AWS Educate Starter Account.
-
-The location of the .aws folder:
-Linux, OS X, or Unix -  `~/.aws`
-Windows - `%UserProfile%\.aws`
-
-The content you need to paste into the `.aws/credentials` file will look like this:
-```
-[default]
-aws_access_key_id=ASIAUR5TOGK3YWZWTTH4
-aws_secret_access_key=7xg45GKfGBjVun7LLab+ZkNnfu7W3oiSAHhxoelB
-aws_session_token=FQoGZXIvYXdzEMX//////////wEaDAEM9eJCX1aZyq3uACKBAh5x+RxB+6DWMmSWJpd+Qx4nGhd1YeraXdBBwj2eDcNRVPOGPcDBc5A8U/ZJMZykSGgb35d/lWyLpZiws8oKhHn8RuliotDYsn6ArVrL/0mKHfSAUlfFOm14p6+DtSjaT+oo6iIauywow5/t8nrg6xdujg805N6Or1pqMnyMMwF58psSbfAQFarLtzVgJDmQAooTNnvZliII+AsckB/n1fiIOi0nUlhnpyYcJ+etXynOZB9eFTYW9uzBuR2QI8kS8wB7TCF3hth9+oXgMyJY7sv0MS5edHufB7IQwsHYBqVr4fX0+Z7R1BFjLgfe9RKjj5IuHk8CXz1UfhN/pD2lb7iTKKiw7d4F
-```
-**NOTE:** Your keys & tokens will be different. I'd recommend keeping the file open to make switching your keys & tokens easier when they expire (every hour).
-
-------
-* Install [ASK CLI](https://developer.amazon.com/docs/smapi/quick-start-alexa-skills-kit-command-line-interface.html)
-```
-npm install -g ask-cli
-```
-* [Initialize](https://developer.amazon.com/docs/smapi/ask-cli-command-reference.html#init-command) ASK CLI with
-```
-ask init
-```
-* Install [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
-* Install [Visual Studio Code](https://code.visualstudio.com/)
-* Install [ASK Toolkit for VS Code](https://marketplace.visualstudio.com/items?itemName=ask-toolkit.alexa-skills-kit-toolkit)
-* Recommended, but not necessary: [AWS](https://marketplace.visualstudio.com/items?itemName=mark-tucker.aws-cli-configure) and [ASK](https://marketplace.visualstudio.com/items?itemName=mark-tucker.ask-cli-configure) configuration helpers
+* Prepare your computer for Alexa development, using the instructions for [Mac](https://docs.google.com/document/d/1LKRezyBnXjY7TiJBEQ6fOeOXbjWF6T_KsgRii_Y4LeU/edit?usp=sharing), [Linux](https://docs.google.com/document/d/1OL1hHrCJaFWq7d_LfFPK49ycCoYGk2qJEvZz5BK5_vI/edit?usp=sharing), or [Windows](https://docs.google.com/document/d/1VZ4AHYDU4e3XuISKMn1ZiRgNeuhik7_gHh5RnBiDZ04/edit?usp=sharing).
 
 ## Getting Started With The Template!
 
